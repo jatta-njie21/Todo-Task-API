@@ -13,8 +13,8 @@ namespace TodoTask.API.Controllers
         {
             Tasks = new List<TodoTask>()
             {
-                new TodoTask{ID = 1, TaskName = "Write and publish an article", Descripion = "Just a simple API article."},
-                new TodoTask{ID = 2, TaskName = "Push code to github", Descripion = "Make the code available on github."}
+                new TodoTask{ID = 1, TaskName = "Shopping", Descripion = "Buy a new sneakers."},
+                new TodoTask{ID = 2, TaskName = "Workout", Descripion = "Finish weekly reps."}
             };
         }
 
