@@ -43,16 +43,16 @@ namespace TodoTask.API.Controllers
         [Route("GetTodoTaskByID/{ID}")]
         public IActionResult GetTodoTaskByID(int id)
         {
-            var task = (from t in Tasks where t.ID == id select t).ToList();
+            var search = (from t in Tasks where t.ID == id select t).ToList();
 
             //returns nothing if the id is not found
-            if (task.Count == 0) 
+            if (search.Count == 0) 
             {
                 NoContent();
             }               
 
             //returns a specific task based on the id
-            return Ok(Tasks);
+            return Ok(search);
         }
     }
 }

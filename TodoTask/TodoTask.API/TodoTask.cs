@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TodoTask.API
 {
-    public class TaskTodo
+    public class TodoTask
     {
         public int ID { get; set; }
         public string TaskName { get; set; }
